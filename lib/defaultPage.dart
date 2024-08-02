@@ -9,6 +9,7 @@ class DefaultPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         centerTitle: true,
         title: const Text('기본페이지'),
@@ -21,6 +22,11 @@ class DefaultPage extends StatelessWidget {
               widgetName: 'test',
               onTap: () {
                 Navigator.of(context).pushNamed(Move.testPage);
+              }),
+          TestComponent(
+              widgetName: 'expansionPanelList',
+              onTap: () {
+                Navigator.of(context).pushNamed(Move.expansionPanelListPage);
               }),
         ],
       ),
