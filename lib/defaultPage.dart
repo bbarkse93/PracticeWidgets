@@ -11,6 +11,7 @@ class DefaultPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
         centerTitle: true,
         title: const Text('기본페이지'),
       ),
@@ -28,6 +29,11 @@ class DefaultPage extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).pushNamed(Move.expansionPanelListPage);
               }),
+          TestComponent(
+              widgetName: 'pageView',
+              onTap: () {
+                Navigator.of(context).pushNamed(Move.pageViewPage);
+              })
         ],
       ),
     );
