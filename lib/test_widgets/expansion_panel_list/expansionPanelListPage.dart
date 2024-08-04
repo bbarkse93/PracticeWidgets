@@ -23,6 +23,11 @@ class _ExpansionPanelListPageState extends State<ExpansionPanelListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        centerTitle: true,
+        title: const Text('ExpansionPanelList'),
+      ),
       backgroundColor: Colors.white,
       body: ListView(
         children: List.generate(titles.length, (index) {
