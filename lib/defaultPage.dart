@@ -33,7 +33,13 @@ class DefaultPage extends StatelessWidget {
               widgetName: 'pageView',
               onTap: () {
                 Navigator.of(context).pushNamed(Move.pageViewPage);
+              }),
+          TestComponent(
+              widgetName: 'syncfusionFlutterCharts',
+              onTap: () {
+                Navigator.of(context).pushNamed(Move.syncfusionFlutterChartsPage);
               })
+
         ],
       ),
     );
