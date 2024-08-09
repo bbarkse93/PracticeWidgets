@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:practice_widgets/test_widgets/cupertino_segmented_control/cupertinoSegmentedControlPage.dart';
 import 'package:practice_widgets/test_widgets/expansion_panel_list/expansionPanelListPage.dart';
 import 'package:practice_widgets/test_widgets/page_view/pageViewPage.dart';
 import 'package:practice_widgets/test_widgets/syncfusion_flutter_charts/syncfusionFlutterChartsPage.dart';
@@ -9,6 +10,7 @@ class Move {
   static String expansionPanelListPage = "/expansionPanelList";
   static String pageViewPage = "/pageView";
   static String syncfusionFlutterChartsPage = "/syncfusionFlutterCharts";
+  static String cupertinoSegmentedControlPage = "/cupertinoSegmentedControl";
 }
 
 Map<String, Widget Function(BuildContext)> getRouters() {
@@ -16,7 +18,7 @@ Map<String, Widget Function(BuildContext)> getRouters() {
     Move.testPage: (context) => TestPage(),
     Move.expansionPanelListPage: (context) => ExpansionPanelListPage(),
     Move.pageViewPage: (context) => PageViewPage(),
-    Move.syncfusionFlutterChartsPage: (context) =>
-        SyncfusionFlutterChartsPage(),
+    Move.syncfusionFlutterChartsPage: (context) => SyncfusionFlutterChartsPage(),
+    Move.cupertinoSegmentedControlPage: (context) => CupertinoSegmentedControlPage(),
   };
 }

@@ -38,7 +38,13 @@ class DefaultPage extends StatelessWidget {
               widgetName: 'syncfusionFlutterCharts',
               onTap: () {
                 Navigator.of(context).pushNamed(Move.syncfusionFlutterChartsPage);
+              }),
+          TestComponent(
+              widgetName: 'cupertinoSegmentedControl',
+              onTap: () {
+                Navigator.of(context).pushNamed(Move.cupertinoSegmentedControlPage);
               })
+
 
         ],
       ),
