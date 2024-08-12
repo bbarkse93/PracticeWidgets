@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:practice_widgets/component/move.dart';
 import 'package:practice_widgets/component/testComponent.dart';
 
-
 class DefaultPage extends StatelessWidget {
   const DefaultPage({super.key});
 
@@ -37,15 +36,21 @@ class DefaultPage extends StatelessWidget {
           TestComponent(
               widgetName: 'syncfusionFlutterCharts',
               onTap: () {
-                Navigator.of(context).pushNamed(Move.syncfusionFlutterChartsPage);
+                Navigator.of(context)
+                    .pushNamed(Move.syncfusionFlutterChartsPage);
               }),
           TestComponent(
               widgetName: 'cupertinoSegmentedControl',
               onTap: () {
-                Navigator.of(context).pushNamed(Move.cupertinoSegmentedControlPage);
-              })
-
-
+                Navigator.of(context)
+                    .pushNamed(Move.cupertinoSegmentedControlPage);
+              }),
+          TestComponent(
+              widgetName: 'alarm',
+              onTap: () {
+                Navigator.of(context)
+                    .pushNamed(Move.alarmPage);
+              }),
         ],
       ),
     );
